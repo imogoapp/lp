@@ -1,0 +1,978 @@
+<!doctype html>
+<html class="no-js" lang="pt-br">
+
+<head>	
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-C4LVRMEL35"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-C4LVRMEL35');
+	</script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<!-- SEO Geral -->
+	<title>imoGo App</title>
+	<meta name="description"
+		content="Cadastre-se gratuitamente na imoGo e aproveite nossos serviços de avaliação profissional, criação e otimização de anúncios e muito mais.">
+	<link rel="canonical" href="https://imogo.com.br">
+	<meta name="author" content="Juca">
+	<meta name="robots" content="index">
+
+
+	<!-- Open Graph Facebook -->
+	<meta property="og:title" content="imoGo - Cadastre-se gratuitamente">
+	<meta property="og:description" content="Cadastre-se gratuitamente na imoGo e aproveite nossos serviços." />
+	<meta property="og:url" content="https://imogo.com.br">
+	<meta property="og:site_name" content="Juca" />
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://juca.eu.org/img/imogo.png">
+	<!-- Favicon  -->
+	<link rel="icon" href="assets/img/favicon.ico">
+
+	<!-- ***** All CSS Files ***** -->
+
+	<!-- Style css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+	<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+	 <!-- Google Tag Manager-->
+	 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	 })(window,document,'script','dataLayer','GTM-MFM62R63');</script>
+	 <!-- End Google Tag Manager-->
+	<style>
+		.list-group-item span {
+			display: inline-block;
+			width: calc(100% - 40px);
+			/* Adjust width as needed */
+		}
+
+		.footer {
+			background-color: #e5e9eb;
+			padding: 40px 24px;
+			text-align: center;
+		}
+
+		.footer-container {
+			max-width: 1280px;
+			margin: 0 auto;
+		}
+
+		.footer-content {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			margin-bottom: 40px;
+		}
+
+		.footer-section {
+			min-width: 150px;
+			text-align: left;
+		}
+
+		.footer-section h3 {
+			font-family: 'Nunito', sans-serif;
+			font-size: 20px;
+			font-weight: 700;
+			color: #333;
+			margin-bottom: 16px;
+		}
+
+		.footer-section a,
+		.footer-section p {
+			font-family: 'Nunito', sans-serif;
+			font-size: 16px;
+			font-weight: 500;
+			color: #555;
+			line-height: 1.7;
+			text-decoration: none;
+			display: block;
+			margin-bottom: 8px;
+		}
+
+		.footer-social {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-bottom: 40px;
+		}
+
+		.footer-logo {
+			width: 120px;
+		}
+
+		.social-icons {
+			display: flex;
+			gap: 10px;
+		}
+
+		.social-icons a {
+			font-size: 24px;
+			color: #555;
+			text-decoration: none;
+		}
+
+		.footer-divider {
+			height: 1px;
+			background-color: #fff;
+			border: none;
+			margin-bottom: 40px;
+		}
+
+		.footer-info p {
+			font-family: 'Nunito', sans-serif;
+			font-size: 14px;
+			color: #414f54;
+			line-height: 2.2;
+		}
+
+		.icons {
+			color: #4d5358;
+			font-size: 24px;
+		}
+	</style>
+
+	<!-- carrossel  -->
+
+	<style>
+		.carousel-container {
+			position: relative;
+			max-width: 60%;
+			width: 800px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+		.carousel {
+			display: flex;
+			transition: transform 0.5s ease-in-out;
+		}
+
+		.carousel img {
+			width: 100%;
+			flex-shrink: 0;
+		}
+
+		.tracinhos {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+
+		.tracinho {
+			width: 20px;
+			height: 4px;
+			background-color: rgba(189, 180, 172, 0.5);
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+			border-radius: 4px;
+		}
+
+		.tracinho.active {
+			background-color: #730d83;
+		}
+
+		@media (max-width: 600px) {
+			.carousel-container {
+				width: 100%;
+			}
+
+			.tracinhos {
+				bottom: 10px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript)-->
+	 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFM62R63"
+	 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	 <!-- End Google Tag Manager (noscript)-->
+	<div class="main">
+		<!-- ***** Preloader Start ***** -->
+		<div class="preloader-main">
+			<div class="preloader-wapper">
+				<svg class="preloader" xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="200">
+					<defs>
+						<filter id="goo" x="-40%" y="-40%" height="200%" width="400%">
+							<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+							<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -8"
+								result="goo" />
+						</filter>
+					</defs>
+					<g filter="url(#goo)">
+						<circle class="dot" cx="50" cy="50" r="25" fill="#730d83" />
+						<circle class="dot" cx="50" cy="50" r="25" fill="#730d83" />
+					</g>
+				</svg>
+				<div>
+					<div class="loader-section section-left"></div>
+					<div class="loader-section section-right"></div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Preloader End ***** -->
+
+		<!-- ***** Header Start ***** -->
+		<header id="header">
+			<!-- Navbar -->
+			<nav data-aos="zoom-out" data-aos-delay="800" class="navbar gameon-navbar navbar-expand">
+				<div class="container header">
+
+					<!-- Logo -->
+					<a class="navbar-brand" href="/">
+						<img src="assets/img/logo/logo.png" style="max-width: 100px;" alt="Log imoGo" />
+					</a>
+
+					<div class="ms-auto"></div>
+					<div class="ms-auto"></div>
+					<div class="ms-auto"></div>					
+
+					<!-- Navbar Nav -->
+					<ul class="navbar-nav items mx-auto" >
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link">Home </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link smooth-anchor" href="#features">Serviços</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" target="_blank" href="https://imogo.online/">Avaliador</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" target="_blank" href="https://app.imogo.com.br/">App</a>
+						</li>
+					</ul>
+
+					<!-- Navbar Toggler -->
+					<ul class="navbar-nav toggle">
+						<li class="nav-item">
+							<a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#menu">
+								<i class="icon-menu m-0"></i>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+		</header>
+		<!-- ***** Header End ***** -->
+
+		<!-- ***** Hero Section Start ***** -->
+		<section id="home" class="hero-section layout-4 has-overlay overlay-gradient vh-85">
+			<div class="container h-100">
+				<div class="row justify-content-center align-items-center h-100">
+					<div class="col-12 col-md-7 col-lg-8">
+						<!-- Hero Content -->
+						<div class="hero-content text-center">
+							<h1 class="text-white typewriter" data-aos="fade-up" data-aos-delay="500"
+								data-aos-duration="1000">negocie imóveis com menos esforço. <br>a IA faz o trabalho pesado, você colhe os <b class="text-laranja"> resultados.</b></h1>
+							<!-- <p class="sub-heading text-white my-4" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">então não perca tempo!</p> -->
+
+							<!-- Download Button -->
+							<div class="content" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+								<div class="button-group download-button justify-content-center">
+									<a href="https://app.imogo.com.br/" class="btn-laranja  w-30" target="_blank">
+										<b>Comece a usar</b>
+									</a>
+
+								</div>
+								<!-- <span class="d-block fst-italic fw-light text-white mt-3">* Instale o nosso PWA
+									disponivel para Android e IOS.</span> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Shape Bottom -->
+			<div class="shape-bottom">
+				<svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+					<path class="fill" d="M0,6V0h1000v100L0,6z"></path>
+				</svg>
+			</div>
+		</section>
+		<!-- ***** Hero Section End ***** -->
+
+		<!-- ***** Content Section Start ***** -->
+		<section id="features" class="features-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-10 col-lg-7">
+						<!-- Intro -->
+						<div class="intro text-center mb-4">
+							<h2 class="title mt-0 text-laranja">menos trabalho,<br> mais negócios</h2>
+							<p>Transforme sua rotina com as ferramentas inteligentes da imoGo para crescer no mercado
+								imobiliário.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row items align-items-center">
+					<div class="col-12 col-md-6 col-lg-4">
+						<ul class="features-item list-group">
+							<li class="item list-group-item border-0">
+								<a href="https://app.imogo.com.br/" style="color: black;" target="_blank">
+									<!-- Image Box -->
+									<div class="image-box layout-2 px-3 py-0 wow fadeInLeft" data-aos-duration="2s"
+										data-wow-delay="0.3s"
+										style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+										<img class="avatar-sm" src="assets/img/content/icon-1.png" alt="">
+										<!-- Content -->
+										<div class="content mt-3">
+											<h4 class="mt-0 mb-3">Precificador</h4>
+											<p class="mt-3">Gere uma avaliação detalhada do valor do seu imóvel em menos
+												de
+												1 minuto.</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="item list-group-item border-0">
+								<a href="https://app.imogo.com.br/" style="color: black;" target="_blank">
+									<!-- Image Box -->
+									<div class="image-box layout-2 px-3 py-0 wow fadeInLeft" data-aos-duration="2s"
+										data-wow-delay="0.6s"
+										style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+										<img class="avatar-sm" src="assets/img/content/icon-2.png" alt="">
+										<!-- Content -->
+										<div class="content mt-3">
+											<h4 class="mt-0 mb-3">Simulador de crédito Imobiliário </h4>
+											<p class="mt-3">Faça simulações rápidas para facilitar a
+												comparação de taxas e prazos.</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="item list-group-item border-0">
+								<a href="https://app.imogo.com.br/" style="color: black;" target="_blank">
+									<!-- Image Box -->
+									<div class="image-box layout-2 px-3 py-0 wow fadeInLeft" data-aos-duration="2s"
+										data-wow-delay="0.9s"
+										style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInLeft;">
+										<img class="avatar-sm" src="assets/img/content/icon-3.png" alt="">
+										<!-- Content -->
+										<div class="content mt-3">
+											<h4 class="mt-0 mb-3" >Planejamento de rede social</h4>
+											<p class="mt-3">Planeje e automatize publicações para se destacar nas redes sociais.</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="item list-group-item border-0">
+								<a href="https://app.imogo.com.br/" style="color: black;" target="_blank">
+									<!-- Image Box -->
+									<div class="image-box layout-2 px-3 py-0 wow fadeInRight" data-aos-duration="2s"
+										data-wow-delay="0.9s"
+										style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInRight;">
+										<img class="avatar-sm" src="assets/img/content/icon-8.png" alt="">
+										<!-- Content -->
+										<div class="content mt-3">
+											<h4 class="mt-0 mb-3">Tilha do conhecimento</h4>
+											<p class="mt-3">Fique por dentro das melhores práticas do mercado imobiliário! Aprimore suas habilidades e se diferencie.</p>
+										</div>
+									</div>
+								</a>
+
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-lg-4 d-none d-lg-block">
+						<!-- Featutes Thumb -->
+						<div class="features-thumb text-center">
+							<img src="assets/img/content/thumb-1.png" alt="">
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<ul class="features-item list-group">
+							<li class="item list-group-item border-0">
+								<a href="https://app.imogo.com.br/" style="color: black;" target="_blank">
+									<!-- Image Box -->
+									<div class="image-box layout-2 px-3 py-0 wow fadeInRight" data-aos-duration="2s"
+										data-wow-delay="0.3s"
+										style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+										<img class="avatar-sm" src="assets/img/content/icon-4.png" alt="">
+										<!-- Content -->
+										<div class="content mt-3">
+											<h4 class="mt-0 mb-3">Análise de
+												certidões
+											</h4>
+											<p class="mt-3">Gere um parecer da análise integrada das certidões
+												essenciais
+												para a segurança das transações imobiliárias.</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="item list-group-item border-0">
+								<a href="https://app.imogo.com.br/" style="color: black;" target="_blank">
+									<!-- Image Box -->
+									<div class="image-box layout-2 px-3 py-0 wow fadeInRight" data-aos-duration="2s"
+										data-wow-delay="0.6s"
+										style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
+										<img class="avatar-sm" src="assets/img/content/icon-5.png" alt="">
+										<!-- Content -->
+										<div class="content mt-3">
+											<h4 class="mt-0 mb-3">Gerador de contratos</h4>
+											<p class="mt-3">Gere contratos com modelos validados em poucos minutos para
+												serem assinados digitalmente.</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="item list-group-item border-0">
+								<a href="https://app.imogo.com.br/" style="color: black;" target="_blank">
+									<!-- Image Box -->
+									<div class="image-box layout-2 px-3 py-0 wow fadeInRight" data-aos-duration="2s"
+										data-wow-delay="0.9s"
+										style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInRight;">
+										<img class="avatar-sm" src="assets/img/content/icon-6.png" alt="">
+										<!-- Content -->
+										<div class="content mt-3">
+											<h4 class="mt-0 mb-3">Gerador de anúncios</h4>
+											<p class="mt-3">Desenvolva anúncios otimizados e profissionais para atrair
+												potenciais compradores.</p>
+										</div>
+									</div>
+								</a>
+
+							</li>
+							<li class="item list-group-item border-0">
+								<a href="https://app.imogo.com.br/" style="color: black;" target="_blank">
+									<!-- Image Box -->
+									<div class="image-box layout-2 px-3 py-0 wow fadeInRight" data-aos-duration="2s"
+										data-wow-delay="0.9s"
+										style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInRight;">
+										<img class="avatar-sm" src="assets/img/content/icon-7.png" alt="">
+										<!-- Content -->
+										<div class="content mt-3">
+											<h4 class="mt-0 mb-3">Home Staging</h4>
+											<p class="mt-3">Decore digitalmente os seus imóveis, criando imagens realistas e atraentes para vender mais.</p>
+										</div>
+									</div>
+								</a>
+								<br>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ***** Content Section End ***** -->
+
+		<!-- ***** Content Section Start ***** -->
+		<section class="content-section primary-bg" id="">
+			<div class="container">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-12 col-md-6">
+						<div class="features-slider-wrapper overflow-hidden">
+							<div class="carousel-container">
+								<div class="carousel mb-5">
+									<img src="assets/img/content/screenshot-1.png" alt="Imagem 1">
+									<img src="assets/img/content/screenshot-2.png" alt="Imagem 2">
+									<img src="assets/img/content/screenshot-3.png" alt="Imagem 3">
+									<img src="assets/img/content/screenshot-4.png" alt="Imagem 4">
+									<img src="assets/img/content/screenshot-5.png" alt="Imagem 5">
+									<img src="assets/img/content/screenshot-6.png" alt="Imagem 6">
+									<img src="assets/img/content/screenshot-7.png" alt="Imagem 7">
+									<img src="assets/img/content/screenshot-8.png" alt="Imagem 8">
+									<img src="assets/img/content/screenshot-9.png" alt="Imagem 9">
+								</div>
+
+								<div class="tracinhos mt-4">
+									<span class="tracinho" data-index="0"></span>
+									<span class="tracinho" data-index="1"></span>
+									<span class="tracinho" data-index="2"></span>
+									<span class="tracinho" data-index="3"></span>
+									<span class="tracinho" data-index="4"></span>
+									<span class="tracinho" data-index="5"></span>
+									<span class="tracinho" data-index="6"></span>
+									<span class="tracinho" data-index="7"></span>
+									<span class="tracinho" data-index="8"></span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-12 col-lg-6">
+						<div class="content">
+							<h2 class="mt-5 text-roxo">Feito para o corretor estratégico</h2>
+
+							<ul class="mt-10 list-group list-group-flush" style="margin-top: 15%;">
+								<li class="list-group-item d-flex border-0 p-0">
+									<div class="icon layout-2 align-items-start mt-1 me-2">
+										<span class="material-symbols-outlined">task_alt</span>
+									</div>
+									<span>Extremamente intuitiva e fácil de usar.</span>
+								</li>
+
+								<li class="list-group-item d-flex border-0 p-0">
+									<div class="icon layout-2 align-items-start mt-1 me-2">
+										<span class="material-symbols-outlined">task_alt</span>
+									</div>
+									<span>Minimiza erros humanos e multiplica seus resultados.</span>
+								</li>
+
+								<li class="list-group-item d-flex border-0 p-0">
+									<div class="icon layout-2 align-items-start mt-1 me-2">
+										<span class="material-symbols-outlined">task_alt</span>
+									</div>
+									<span>Trabalhe de qualquer lugar, tenha nossos serviços sempre na palma da sua
+										mão.</span>
+								</li>
+
+								<li class="list-group-item d-flex border-0 p-0">
+									<div class="icon layout-2 align-items-start mt-1 me-2">
+										<span class="material-symbols-outlined">task_alt</span>
+									</div>
+									<span>Acesso gratuito.</span>
+								</li>
+
+
+
+
+							</ul>
+
+							<p class="sub-heading my-4"></p>
+
+							<!-- Download Button -->
+							<div class="content">
+								<div class="button-group download-button justify-content-center">
+
+									<a href="https://app.imogo.com.br/" class="btn-laranja  w-30" target="_blank">
+										<b>Comece a usar</b>
+									</a>
+
+								</div>
+								<!-- <span class="d-block fst-italic fw-light text-white mt-3">* Instale o nosso PWA
+									disponivel para Android e IOS.</span> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ***** Content Section End ***** -->
+
+		<section id="review" class="review-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-10 col-lg-7">
+						<!-- Intro -->
+						<div class="intro text-center mb-4">
+							<!-- <span class="badge rounded-pill text-bg-light">
+								<i class="fa-regular fa-heart"></i>
+								<span>Customer's</span>
+								<span>Reviews</span>
+							</span> -->
+							<h2 class="title text-laranja">o que falam sobre a imoGo</h2>
+							<!-- <p>Hear from our satisfied customers who have transformed their landing pages with sApp, and discover why they love using our platform.</p> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="row items align-items-center">
+					<div class="col-12 col-md-6 col-lg-4 item">
+						<!-- Reviews -->
+						<div class="reviews card">
+							<div class="content p-4">
+								<div class="review-icon">
+									<i class="fas fa-star text-warning"></i>
+									<i class="fas fa-star text-warning"></i>
+									<i class="fas fa-star text-warning"></i>
+									<i class="fas fa-star text-warning"></i>
+									<i class="fas fa-star text-warning"></i>
+								</div>
+								<!-- Review Icon
+								<h4 class="clip-text text-effect">Excellent Service &amp; Support!!</h4> -->
+								<p>"Achei bem interessante o aplicativo, tem uma
+									excelente interação, vai ajudar bastante
+									meu trabalho como
+									corretor de imóveis e a usabilidade dele vai
+									tanto otimizar o meu tempo como também vai
+									trazer resultados que eu acredito que serão
+									bem expressivos na minha vida diária."</p>
+							</div>
+
+							<!-- Review Meta -->
+							<div class="review-meta primary-bg d-flex p-3">
+								<img class="rounded-pill avatar-md" src="assets/img/content/avatar-jhone.png" alt="">
+								<div class="reviewer ms-3">
+									<h5 class="reviewer-name mt-0 mb-2">Jhone Mota</h5>
+									<span>CRECI 030807</span>
+								</div>
+							</div>
+
+							<!-- Quotation Icon -->
+							<!-- <div class="quot-icon">
+								<img class="avatar-md" src="assets/img/content/quote.png" alt="">
+							</div> -->
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 item">
+						<!-- Reviews -->
+						<div class="reviews card">
+							<div class="content p-4">
+								<div class="review-icon">
+									<i class="fas fa-star text-warning"></i>
+									<i class="fas fa-star text-warning"></i>
+									<i class="fas fa-star text-warning"></i>
+									<i class="fas fa-star text-warning"></i>
+									<i class="fas fa-star text-warning"></i>
+								</div>
+
+								<!-- Review Icon
+								 
+								<h4 class="clip-text text-effect">Excellent Service &amp; Support!!</h4> -->
+								<br>
+								<p>"Aplicativo de fácil acesso, eficácia na
+									devolutiva do laudo que torna o processo
+									mais seguro em virtude da análise feita.
+									Agilidade em todas as etapas, onde é
+									possível acompanhar o andamento de forma
+									prática."</p><br>
+							</div>
+
+							<!-- Review Meta -->
+							<div class="review-meta primary-bg d-flex p-3">
+								<img class="rounded-pill avatar-md" src="assets/img/content/avatar-marcia-maria.png"
+									alt="">
+								<div class="reviewer ms-3">
+									<h5 class="reviewer-name mt-0 mb-2">Marcia Maria de Moraes</h5>
+									<span>CRECI 28357</span>
+								</div>
+							</div>
+
+							<!-- Quotation Icon -->
+							<!-- <div class="quot-icon">
+								<img class="avatar-md" src="assets/img/content/quote.png" alt="">
+							</div> -->
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 item">
+						<!-- Reviews -->
+						<div class="reviews card">
+							<div class="content p-4">
+								<div class="review-icon">
+									<i class="fas fa-star text-warning"></i>
+									<i class="fas fa-star text-warning"></i>
+									<i class="fas fa-star text-warning"></i>
+									<i class="fas fa-star text-warning"></i>
+									<i class="fas fa-star text-warning"></i>
+								</div>
+								<!-- Review Icon
+								<h4 class="clip-text text-effect">Excellent Service &amp; Support!!</h4> -->
+								<p>"Uma empresa de soluções imobiliárias
+									inteligentes.
+									Faz avaliações de imóveis com muita rapidez
+									e precisão. Não precisamos lidar com
+									burocracias e papeladas pois tudo é resolvido
+									através da internet . Eu confio e indico esta
+									empresa. 5 estrelas com louvor!"</p>
+							</div>
+
+							<!-- Review Meta -->
+							<div class="review-meta primary-bg d-flex p-3">
+								<img class="rounded-pill avatar-md" src="assets/img/content/avatar-leo.png" alt="">
+								<div class="reviewer ms-3">
+									<h5 class="reviewer-name mt-0 mb-2">Leonel Alves</h5>
+									<span>CRECI 5013</span>
+								</div>
+							</div>
+
+							<!-- Quotation Icon -->
+							<!-- <div class="quot-icon">
+								<img class="avatar-md" src="assets/img/content/quote.png" alt="">
+							</div> -->
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<footer class="footer">
+			<div class="footer-container">
+
+				<div class="footer-social">
+					<img src="assets/img/logo/logo_padrao.png" alt="Logo" class="footer-logo">
+					<div class="social-icons">
+						<a href="https://www.instagram.com/imogoapp/" target="_blank"><i
+								class="icons ph ph-instagram-logo"></i></a>
+						<a href="https://www.facebook.com/imogoapp/" target="_blank"><i
+								class="icons ph ph-facebook-logo"></i></a>
+						<a href="https://www.linkedin.com/company/90368105/admin/feed/posts/?feedType=following"
+							target="_blank"><i class="icons ph ph-linkedin-logo"></i></a>
+						<a href="https://www.youtube.com/@imoGoapp" target="_blank"><i
+								class="icons ph ph-youtube-logo"></i></a>
+					</div>
+				</div>
+				<hr class="footer-divider">
+				<div class="footer-info">
+					<p>
+						SCN Quadra 05 Bl A - Brasília Shopping - Torre Norte - Asa Norte, Brasília - DF 70715-900 <br>
+						Site de propriedade da imoGo. Todos os direitos são reservados. Ao navegar por esse site e usar
+						nossos serviços, você concorda com o nosso Aviso de Privacidade e Política de Privacidade <br>
+						IMOGO IMOBILIARIA, PUBLICICIDADE, REPRESENTACAO E TECNOLOGIA DA INFORMACAO LTDA. CNPJ:
+						50.509.002/0001-89. CRECI: 30152. <br>
+						© 2024 | imoGo
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<!--====== Modal Responsive Menu Area Start ======-->
+		<div id="menu" class="modal fade p-0">
+			<div class="modal-dialog modal-dialog-slideout">
+				<div class="modal-content full">
+					<div class="modal-header" data-bs-dismiss="modal">
+						Menu <i class="icon-close"></i>
+					</div>
+					<div class="menu modal-body">
+						<div class="row w-100">
+							<div class="items p-0 col-12 text-center">
+								<!-- Append [navbar] -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--====== Modal Responsive Menu Area End ======-->
+
+		<!--====== Scroll To Top Area Start ======-->
+		<div id="scroll-to-top" class="scroll-to-top">
+			<a href="#home" class="smooth-anchor">
+				<i class="fa-solid fa-arrow-up"></i>
+			</a>
+		</div>
+		<!--====== Scroll To Top Area End ======-->
+		
+		<a id="robbu-whatsapp-button" class="left" target="_blank"
+			href="https://api.whatsapp.com/send/?phone=5561981304920&text=Ol%C3%A1%20imoGo!&type=phone_number&app_absent=0">
+			
+			<img src="./assets/img/logo/whatsapp-icon.svg">
+		</a>
+	</div>
+
+
+	<!-- ***** All jQuery Plugins ***** -->
+
+	<!-- jQuery(necessary for all JavaScript plugins) -->
+	<script src="assets/js/vendor/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="assets/js/vendor/popper.min.js"></script>
+	<script src="assets/js/vendor/bootstrap.min.js"></script>
+
+	<!-- Plugins js -->
+	<script src="assets/js/vendor/slider.min.js"></script>
+	<script src="assets/js/vendor/owl.carousel.min.js"></script>
+	<script src="assets/js/vendor/counterup.js"></script>
+	<script src="assets/js/vendor/waypoint.js"></script>
+	<script src="assets/js/vendor/aos.js"></script>
+	<script src="assets/js/vendor/wow.min.js"></script>
+	<script src="assets/js/vendor/countdown.min.js"></script>
+	<script src="assets/js/vendor/gallery.min.js"></script>
+
+	<script>
+		function typeWrite(element) {
+			const textArray = element.innerHTML.split('');
+			element.innerHTML = '';
+			let isTag = false;
+			let text = '';
+
+			textArray.forEach((letter, i) => {
+				setTimeout(() => {
+					if (letter === '<') {
+						isTag = true;
+					}
+					if (isTag) {
+						text += letter;
+					} else {
+						text += letter;
+						element.innerHTML = text;
+					}
+					if (letter === '>') {
+						isTag = false;
+						element.innerHTML = text;
+					}
+				}, 30 * i); // Ajuste a velocidade conforme necessário
+			});
+		}
+
+		document.addEventListener('DOMContentLoaded', function () {
+			const typewriterElement = document.querySelector('.typewriter');
+			if (typewriterElement) {
+				typeWrite(typewriterElement);
+			}
+		});
+	</script>
+	<!-- Main js -->
+	<script src="assets/js/main.js"></script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const carousel = document.querySelector('.carousel');
+			const tracinhos = document.querySelectorAll('.tracinho');
+			const totalImagens = tracinhos.length;
+			let currentIndex = 0;
+
+			// Função para mover o carrossel
+			function moveCarousel(index) {
+				const offset = -index * 100;
+				carousel.style.transform = `translateX(${offset}%)`;
+				currentIndex = index;
+				updateTracinhos();
+			}
+
+			// Função para atualizar os tracinhos ativos
+			function updateTracinhos() {
+				tracinhos.forEach((tracinho, index) => {
+					if (index === currentIndex) {
+						tracinho.classList.add('active');
+					} else {
+						tracinho.classList.remove('active');
+					}
+				});
+			}
+
+			// Adiciona eventos de clique aos tracinhos
+			tracinhos.forEach((tracinho, index) => {
+				tracinho.addEventListener('click', () => {
+					moveCarousel(index);
+				});
+			});
+
+			// Avançar automaticamente para a próxima imagem
+			function autoMoveCarousel() {
+				currentIndex = (currentIndex + 1) % totalImagens;
+				moveCarousel(currentIndex);
+			}
+
+			// Inicia o carrossel automaticamente a cada 3 segundos
+			setInterval(autoMoveCarousel, 3000);
+
+			// Inicializa o primeiro tracinho como ativo
+			updateTracinhos();
+		});
+	</script>
+
+	<style>
+		#robbu-whatsapp-button {
+			display: flex;
+			position: fixed;
+			background: #25d366;
+			bottom: 25px;
+			border-radius: 50%;
+			width: 64px;
+			height: 64px;
+			box-shadow: 2px 2px 12px rgba(22, 124, 60, .2);
+			transition: .4s;
+			align-items: center;
+			justify-content: center;
+			z-index: 9999 !important;
+			/* Adicionando z-index alto e !important */
+		}
+
+		#robbu-whatsapp-button>.rwb-tooltip {
+			position: absolute;
+			bottom: 100%;
+			margin-bottom: 20px;
+			border-radius: 4px;
+			padding: 15px;
+			color: #2d2d2d;
+			font-size: 16px;
+			white-space: nowrap;
+			box-shadow: 2px 2px 12px rgba(0, 0, 0, .2);
+			opacity: 0;
+			transition: .4s;
+			pointer-events: none;
+			z-index: 9999 !important;
+			/* Adicionando z-index alto e !important */
+		}
+
+		#robbu-whatsapp-button>.rwb-tooltip:after {
+			display: block;
+			content: "";
+			position: absolute;
+			top: 85%;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 6px 7px 0 7px;
+			border-color: #fff transparent transparent transparent;
+			transition: .4s;
+			z-index: 9999 !important;
+			/* Adicionando z-index alto e !important */
+		}
+
+		#robbu-whatsapp-button.left {
+			left: 25px;
+		}
+
+		#robbu-whatsapp-button.left>.rwb-tooltip {
+			left: 0;
+			transform: translateX(-10%);
+		}
+
+		#robbu-whatsapp-button.left>.rwb-tooltip:after {
+			left: 23px;
+		}
+
+		#robbu-whatsapp-button:not(.left) {
+			right: 25px;
+		}
+
+		#robbu-whatsapp-button:not(.left)>.rwb-tooltip {
+			right: 0;
+			transform: translateX(10%);
+		}
+
+		#robbu-whatsapp-button:not(.left)>.rwb-tooltip:after {
+			right: 23px;
+		}
+
+		#robbu-whatsapp-button>img {
+			display: block;
+			width: 34px;
+			height: 34px;
+		}
+
+		#robbu-whatsapp-button:hover {
+			background: #21bd5c;
+			box-shadow: 3px 3px 12px rgba(14, 81, 39, .4);
+		}
+
+		#robbu-whatsapp-button:hover>.rwb-tooltip {
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		#robbu-whatsapp-button:hover>.rwb-tooltip:after {
+			top: 100%;
+			transition-delay: .4s;
+		}
+	</style>
+</body>
+
+</html>
